@@ -20,7 +20,9 @@ end
 """
 Computing GC Percent 
 
+    cg_percent(seq)
 
+Returns the CG percent of a given sequence.
 """
 function cg_percent(seq)
     cg_count = 0
@@ -37,6 +39,9 @@ end
 """
 Computing GC Content
 
+    cg_content(fasta)
+
+Calculates CG percentage of sequences in FASTA format and returns the name and CG percentage of the sequence with the highest CG content.
 """
 function cg_content(fasta)
     sequences = read_fasta(fasta)
@@ -51,5 +56,3 @@ function cg_content(fasta)
     println("\n$(max_cg[2])\n$(max_cg[1])")
     return cg_content
 end
-
-cg_content(">ros\nACT\n>ros2\nAGGTC\n>ros\nATC")
