@@ -1,2 +1,2 @@
-language = "bash"
-run = ""
+language = "julia"
+run = "julia stronghold/cg_content.jl"
