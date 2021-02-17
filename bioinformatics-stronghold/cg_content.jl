@@ -11,7 +11,8 @@ function read_fasta(fasta)
     popfirst!(seq_strings)
     for i in seq_strings
         seq = split(i, "\n")
-        sequences[seq[1]] = seq[2]
+        seq_cat = join(seq[2:length(seq)])
+        sequences[seq[1]] = seq_cat
     end
     return sequences
 end
@@ -56,3 +57,5 @@ function cg_content(fasta)
     println("\n$(max_cg[2])\n$(max_cg[1])")
     return cg_content
 end
+
+#cg_content("""""")
