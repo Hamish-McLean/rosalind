@@ -56,8 +56,13 @@ function readfasta(fasta)
 end
 
 
-filename = "fasta.txt"
-for (k, v) in profile(filename)
-    for 
-[println("$k: $v") for (k, v) in profile(filename)]
-println(consensus(filename))
+filename = "rosalind_cons.txt"
+
+[print("$i") for i in consensus(filename)]
+println()
+
+for base in "ACGT"
+    print("$base:")
+    [print(" $i") for i in profile(filename)[base]]
+    println()
+end
