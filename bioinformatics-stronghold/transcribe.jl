@@ -1,14 +1,15 @@
 """
 Transcribing DNA into RNA.
 
-    transcribe(seq::String)
+    transcribe(t::String) -> String
 
-Returns the RNA transcript of a DNA string with 'T' replaced with 'U'.
+# Arguments
+- `t::String`: a DNA string.
 
-# Args
-- seq: a DNA string
+# Returns
+- `String`: the transcribed string of `t`.
 """
-function transcribe(seq::String)
+function transcribe(t::String)
     transcribed = replace(seq, 'T' => 'U')
     println(transcribed)
     return transcribed

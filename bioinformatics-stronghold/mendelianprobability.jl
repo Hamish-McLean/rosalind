@@ -9,8 +9,12 @@ Calculates the probability of a random mating pair producing an offspring with a
 - `k::Int`: number of homozygous dominant individuals
 - `m::Int`: number of heterozygous individuals
 - `n::Int`: number of homozygous recessive individuals
+
+# Returns
+- `Int`: the probability that two randomly selected mating organisms will produce an individual possessing a dominant allele (and thus displaying the dominant phenotype). 
+Assume that any two organisms can mate.
 """
-function mendelian_probability(k::Int, m::Int, n::Int)
+function mendelianprobability(k::Int, m::Int, n::Int)
     t = k + m + n
     t1 = t - 1
     pk = k/t + (t-k)/t * k/t1
@@ -20,4 +24,4 @@ function mendelian_probability(k::Int, m::Int, n::Int)
     return probability
 end
 
-println(mendelian_probability(22, 22, 27))
+println(mendelianprobability(22, 22, 27))

@@ -1,13 +1,17 @@
 """ 
 Counting DNA Nucleotides
 
-    countnucleotides(s::string)
+    countnucleotides(s::string) -> Dict{Char, Int}
 
-Returns a count of each nucleotide in the sequence
-in the order A, C, G, T.
+Given: A DNA string `s` of length at most 1000 nt.
+
+Return: Four integers (separated by spaces) counting the respective number of times that the symbols 'A', 'C', 'G', and 'T' occur in `s`.
 
 # Arguments
-- `s::String`: a DNA sequence
+- `s::String`: a DNA sequence.
+
+# Returns
+- `Dict{Char, Int}`: a dictionary of base => count.
 """
 function countnucleotides(s::String)
     counts = Dict(base => 0 for base in "ACGT")

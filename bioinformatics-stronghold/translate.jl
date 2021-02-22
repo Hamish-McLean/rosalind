@@ -1,11 +1,17 @@
 """
 Translating RNA into Protein
 
-    translate(rna::String) -> String
+    translate(s::String) -> String
 
-Translates an RNA sequence into an amino acid sequence.
+Translates an RNA string into an amino acid string.
+
+# Arguments
+- `s::String`: an RNA string `s` corresponding to a strand of mRNA.
+
+# Return
+- `String`: The protein string encoded by `s`.
 """
-function translate(rna::String)
+function translate(s::String)
     translation = ""
     codons = Dict(
         "UUU"=>"F",    "CUU"=>"L", "AUU"=>"I", "GUU"=>"V",
@@ -25,8 +31,8 @@ function translate(rna::String)
         "UGA"=>"Stop", "CGA"=>"R", "AGA"=>"R", "GGA"=>"G",
         "UGG"=>"W",    "CGG"=>"R", "AGG"=>"R", "GGG"=>"G"
     )
-    for triplet in 1:3:(length(rna)-3)
-        translation *= get(codons, SubString(rna, triplet, triplet+2), Nothing)
+    for triplet in 1:3:(length(s)-3)
+        translation *= get(codons, SubString(s, triplet, triplet+2), Nothing)
     end
     println(translation)
 end

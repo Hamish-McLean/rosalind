@@ -1,3 +1,0 @@
-# Rosalind
-## Bioinformatics Stronghold
-

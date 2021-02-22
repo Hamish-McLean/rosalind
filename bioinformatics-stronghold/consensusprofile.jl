@@ -1,8 +1,13 @@
 """
 Consensus and Profile
 
-    consensus()
+    consensus(fasta) -> String
 
+# Arguments
+- `fasta`: a collection of at DNA strings of equal length in FASTA format.
+
+# Returns
+- `String`: a consensus string for the collection.
 """
 function consensus(fasta)
     prof = profile(fasta)

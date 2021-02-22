@@ -1,11 +1,15 @@
 """
 Rabbits and Recurrence Relations
 
-    rabbit_recurrence(n::Int, k::Int)
+    rabbit_recurrence(n::Int, k::Int) -> Int
 
-# Args
-- n: total number of months <= 40
-- k: litter size (pairs) <= 5
+# Arguments
+- `n::Int`: the total number of months ≤ 40.
+- `k::Int`: litter size (pairs) ≤ 5.
+
+# Returns 
+- `Int`: The total number of rabbit pairs that will be present after `n` months.
+We begin with 1 pair and in each generation, every pair of reproduction-age rabbits produces a litter of `k` rabbit pairs.
 """
 function rabbit_recurrence(n::Int, k::Int)
     rabbits = fill(1, n)

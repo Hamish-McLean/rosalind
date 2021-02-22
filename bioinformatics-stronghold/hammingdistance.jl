@@ -1,9 +1,16 @@
 """
 Counting Point Mutations
 
-    hamming_distance()
+    hamming_distance(s::String, t::String) -> Int
 
 Returns the hamming distance (the number of mismatched bases) between two strings of identical length.
+
+# Arguments
+- `s::String`: a DNA string of equal length to `t`. 
+- `t::String`: a DNA string of equal length to `s`.
+
+# Returns
+- `Int`: the Hamming distance dH(s,t).
 """
 function hamming_distance(s, t)
     hamming_distance = 0

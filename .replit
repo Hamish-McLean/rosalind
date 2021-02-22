@@ -1,2 +1,2 @@
 language = "julia"
-run = "julia bioinformatics-stronghold/mortalfibonaccirabbits.jl"
+run = "julia bioinformatics-stronghold/sharedmotif.jl"

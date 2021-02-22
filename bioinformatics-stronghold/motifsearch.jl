@@ -1,9 +1,16 @@
 """
 Finding a Motif in DNA
 
-    motifsearch(s::String, t::String) -> Int
+    motifsearch(s::String, t::String) -> Array
 
 Finds the locations of a motif `t` in nucleotide sequence `s`.
+
+# Arguments
+- `s::String`: a DNA string.
+- `t::String`: a DNA string.
+
+# Returns
+- `Array`: all locations of `t` as a substring of `s`.
 """
 function motifsearch(s::String, t::String)
     locations = []
