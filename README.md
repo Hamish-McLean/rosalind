@@ -22,4 +22,8 @@ Profile: [Cycadophyta](http://rosalind.info/users/Cycadophyta/)
 |IEV	|Calculating Expected Offspring     |[expectedoffspring.jl](./bioinformatics-stronghold/expectedoffspring.jl)      |
 |LCSM	|Finding a Shared Motif             |[sharedmotif.jl](./bioinformatics-stronghold/sharedmotif.jl)            |
 |LIA	|Independent Alleles                |[independentalleles.jl](./bioinformatics-stronghold/independentalleles.jl)     |
-|MPRT	|Finding a Protein Motif            |[proteinmotif.py](./bioinformatics-stronghold/proteinmotif.py)           |
+|MPRT*	|Finding a Protein Motif            |[proteinmotif.py](./bioinformatics-stronghold/proteinmotif.py)           |
+|MRNA	|Inferring mRNA from Protein        |[mrnacombinations.jl](./bioinformatics-stronghold/mrnacombinations.jl)       |
+
+
+*MPRT was done in python due to package limitations for Julia in repl.it.

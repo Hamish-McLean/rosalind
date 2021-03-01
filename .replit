@@ -1,5 +1,5 @@
-#language = "julia"
-#run = "julia bioinformatics-stronghold/proteinmotif.jl"
+language = "julia"
+run = "julia bioinformatics-stronghold/mrnacombinations.jl"
 
-language = "python3"
-run = "python3 bioinformatics-stronghold/proteinmotif.py"
+#language = "python3"
+#run = "python3 #bioinformatics-stronghold/proteinmotif.py"
