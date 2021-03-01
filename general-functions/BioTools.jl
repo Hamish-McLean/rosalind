@@ -1,3 +1,17 @@
+module BioTools
+
+export readfasta
+
+struct Record 
+    id::String
+    sequence::String
+end
+
+struct FASTA 
+    record::Record
+end
+
+
 """
 Read FASTA format
 
@@ -25,3 +39,5 @@ function readfasta(fasta)
     end
     return sequences
 end
+
+end  # end of module

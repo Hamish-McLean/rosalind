@@ -1,3 +1,7 @@
+include("../general-functions/BioTools.jl")
+
+using .BioTools
+
 """
 Consensus and Profile
 
@@ -37,27 +41,6 @@ function profile(fasta)
         end
     end
     return profile
-end
-
-
-"""
-    read_fasta(fasta)
-
-Returns a dictionary: Name => sequence.
-"""
-function readfasta(fasta)
-    fastastring = open(fasta) do file
-        read(file, String)
-    end
-    sequences = Dict{String, String}()
-    seqstrings = split(fastastring, '>')
-    popfirst!(seqstrings)
-    for i in seqstrings
-        seq = split(i, "\n")
-        seqcat = join(seq[2:length(seq)])
-        sequences[seq[1]] = seqcat
-    end
-    return sequences
 end
 
 

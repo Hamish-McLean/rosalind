@@ -1,7 +1,7 @@
 """
 Calculating Expected Offspring
 
-    expectedoffspring(g)
+    expectedoffspring(g) -> Int
 
 Calculates the probability of offspring displaying the dominant phenotype given the number of each parent genotype pair. Each pair has two offspring.
 
@@ -14,9 +14,13 @@ P(dominant|genotype)
 6. aa-aa | p=0
 
 # Arguments
-- `g`: a vector of 6 integers 
+- `g`: a vector of 6 integers relating to the number of each genotype in the population.
+
+# Returns
+- `Int`: the probability of offspring displaying the dominant phenotype.
 """
 expectedoffspring(g) = 2(sum(g[1:3]) + 3/4*g[4] + 2/4*g[5])
+
 
 testgenotypes = [1, 0, 0, 1, 0, 1]
 

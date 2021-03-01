@@ -1,10 +1,10 @@
 # Rosalind
-Solutions to Bioinformatics problems on Rosalind
+Solutions to Bioinformatics problems on [Rosalind](http://rosalind.info/problems/list-view/).
 
 Profile: [Cycadophyta](http://rosalind.info/users/Cycadophyta/)
 
 
-## Problems
+## Completed Problems
 |ID     |Title                              |Script     |
 |-------|-----------------------------------|-----------|
 |DNA	|Counting DNA Nucleotides           |[countnucleotides.jl](./bioinformatics-stronghold/countnucleotides.jl)       |
@@ -21,3 +21,5 @@ Profile: [Cycadophyta](http://rosalind.info/users/Cycadophyta/)
 |GRPH	|Overlap Graphs                     |[overlapgraph.jl](./bioinformatics-stronghold/overlapgraph.jl)           |
 |IEV	|Calculating Expected Offspring     |[expectedoffspring.jl](./bioinformatics-stronghold/expectedoffspring.jl)      |
 |LCSM	|Finding a Shared Motif             |[sharedmotif.jl](./bioinformatics-stronghold/sharedmotif.jl)            |
+|LIA	|Independent Alleles                |[independentalleles.jl](./bioinformatics-stronghold/independentalleles.jl)     |
+|MPRT	|Finding a Protein Motif            |[proteinmotif.py](./bioinformatics-stronghold/proteinmotif.py)           |

@@ -1,5 +1,6 @@
-include("../general-functions/readfasta.jl")
+include("../general-functions/BioTools.jl")
 
+using .BioTools
 
 """
 Computing GC Content
