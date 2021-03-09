@@ -37,6 +37,7 @@ function translate(s::String)
     println(translation)
 end
 
+"""
 filename = "rosalind_prot.txt"
 
 rna = open(filename) do file
@@ -44,3 +45,4 @@ rna = open(filename) do file
 end
 
 translate(rna)
+"""

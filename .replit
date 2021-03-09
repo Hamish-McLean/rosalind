@@ -1,5 +1,5 @@
 language = "julia"
-run = "julia bioinformatics-stronghold/mrnacombinations.jl"
+run = "julia bioinformatics-stronghold/ennumeratestrings.jl"
 
 #language = "python3"
 #run = "python3 #bioinformatics-stronghold/proteinmotif.py"
