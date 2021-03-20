@@ -27,4 +27,4 @@ end
 strings = ennumeratestrings(['A', 'C', 'G', 'T'], 2)
 
 strings = ennumeratestrings(['A', 'B', 'C', 'D', 'E', 'F'], 3)
-[println(i) for i in strings]
+println.(strings)
